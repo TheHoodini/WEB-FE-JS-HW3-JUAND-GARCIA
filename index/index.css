@@ -1,7 +1,7 @@
 :root {
     --main-color: #f4e11d;
-    --secondary-color: #1B1A17;
-    --secondary-color-d: #323330;
+    --secondary-color: #20201d;
+    --secondary-color-l: #323330;
     --tertiary-color: white;
 }
 
@@ -19,26 +19,20 @@ a:hover,
 a:active {
     text-decoration: none;
     color: var(--tertiary-color);
-    font-family: "Source Code Pro", monospace;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    font-weight: 400;
-    width: 100%;
-}
-
-li {
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-}
 
 li:hover {
     background-color: var(--secondary-color);
 }
+
+
+h2 {
+    font-size: 2em;
+    font-family: "Source Code Pro", monospace;
+}
+
+/************************************************/
 
 .topbar {
     z-index: 1000;
@@ -80,11 +74,12 @@ header {
 }
 
 .header-container {
+    margin-left: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 300px;
+    gap: 350px;
 }
 
 .text1,
@@ -102,21 +97,27 @@ header {
     color: var(--main-color);
 }
 
-main {
-    display: flex;
-}
-
 aside {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25%;
-    background-color: var(--secondary-color-d);
+    background-color: var(--secondary-color-l);
+}
 
-    top: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    overflow: auto;
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: 400;
+    width: 100%;
+}
+
+aside ul li {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 aside h2 {
@@ -124,16 +125,62 @@ aside h2 {
     margin-bottom: 20px;
 }
 
-.main-content {
-    padding: 10px 30px;
-
+main {
+    display: flex;
 }
 
-h2 {
-    font-size: 2em;
+.main-content {
+    padding: 10px 40px;
+}
+
+.main-content h2 {
+    color: var(--tertiary-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+.code-container{
+    margin: 30px 0;
+    background-color: #0d1117;
+    width: 50%;
+    border-radius: 16px;
+}
+
+.code-title {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: var(--secondary-color-l);
+    border-radius: 16px 16px 0 0;
+    height: 40px;
+}
+
+.code-title p{
+    padding: 0 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+pre {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.code-span{
     font-family: "Source Code Pro", monospace;
+    color: white;
+    background-color: var(--secondary-color-l);
+}
+
+.section3 li::marker{
+    color: var(--main-color);
 }
 
 footer {
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background-color: black;
+    height: 15vh;
 }
