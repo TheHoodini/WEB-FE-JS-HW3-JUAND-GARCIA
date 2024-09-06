@@ -7,7 +7,7 @@ This project is a website designed to explain key JavaScript concepts such as as
 
 - **JavaScript Async**: Introduction to asynchronous programming in JavaScript and its importance in handling long-running tasks without blocking the main thread.
   
-- **Callback**: Explanation of callback functions and how they are used to handle asynchronous tasks, along with common challenges like "callback hell."
+- **Callback**: Explanation of callback functions and how they are used to handle asynchronous tasks.
 
 - **Promise**: A guide to working with promises, a more modern approach to managing asynchronous code in JavaScript, with examples of `.then()` and `.catch()`.
 
@@ -23,4 +23,4 @@ This project is a website designed to explain key JavaScript concepts such as as
 
 ## How to Use
 
-Simply open the `index.html` file in a browser or visit the link in GitHub Pages.
+Simply open the `index.html` file in a browser or visit [this link](https://thehoodini.github.io/WEB-FE-JS-HW3-JUAND-GARCIA/) in GitHub Pages.
